@@ -1,0 +1,36 @@
+include ../mixins
+block variables
+
+doctype html
+html(lang="ru-RU")
+	body(class=pageClass)
+		.body
+			.wrapper
+				include ../modules/header
+				main
+					include ../modules/slider
+					block content
+				include ../modules/footer
+head
+	meta(charset="utf-8")
+	title #{title}
+	<!--[if IE]>
+	meta(http-equiv='X-UA-Compatible', content="IE = edge")
+	<![endif]-->
+	meta(name="viewport" content="width=900,initial-scale=1")
+	meta(name="keywords" content="")
+
+
+	link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet")
+	link(rel="stylesheet" type='text/css' href="static/css/main.css")
+
+
+	script(src="static/js/jquery.js")
+	script(src="static/js/slick.min.js")
+	script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH_b63jVmJq8mw7dL-RDWnbHSyT2ysZgg")
+	script(src="static/js/main.js")
+	block script
+
+	<!--[if lt IE 9]>
+	script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+	<![endif]-->

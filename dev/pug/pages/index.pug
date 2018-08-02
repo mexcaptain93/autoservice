@@ -1,0 +1,32 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Главная страница'
+	- var pageClass = 'index'
+
+
+block content
+	.index__advantages.advantages
+		.advantages__list
+			.advantages__item.advantage
+				.advantage__img
+					img(src="static/img/content/advantage-1.png")
+				.advantage__text Бесплатный осмотр
+			.advantages__item.advantage
+				.advantage__img
+					img(src="static/img/content/advantage-2.png")
+				.advantage__text Замена масла от 500 рублей
+			.advantages__item.advantage
+				.advantage__img
+					img(src="static/img/content/advantage-3.png")
+				.advantage__text Техосмотр и страхование
+	.index__heading.h1
+		h1 Автосервис Кузнецов
+	.index__text.text
+		.text__main
+			p Автосервис “КУЗНЕЦОВ”- это целый комплекс квалифицированных сервисных услуг для вашего автомобиля.
+		.text__all
+			p Наш автосервис располагает своим магазином, в котором моно приобрести запчасти для ремонта, масла и жидкости. Так же можно пройти Технический осмотр, получить диагностическую карту и застраховать свой автомобиль по полисам ОСАГО.
+			p Сервисная зона оснащена всем необходимым современным оборудованием для обслуживания и ремонта автомобилей, что позволяет точно определить и устранить любые неисправности.
+			p Для Вашего комфорта, на территории сервиса имеется комната ожидания.
+	.index__map.js-index-map

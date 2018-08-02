@@ -1,0 +1,104 @@
+@import 'utils/fonts.styl'
+@import 'vars.styl'
+@import 'utils/mixins.styl'
+@import 'libs.styl'
+
+html
+	font-size $baseFontSize
+	min-height 100%
+	height: 100%
+	line-height 1.3
+
+body
+	font-family $mainFont
+	min-height 100%
+	height: 100%
+
+h1,h2,h3,h4,h5,h6
+	margin 0
+
+ul,li
+	list-style-type none
+	margin 0
+	padding 0
+
+p
+	margin 0
+
+a
+	color inherit
+	text-decoration none
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video
+	vertical-align middle
+
+textarea
+	resize none
+
+section
+	position relative
+
+input,
+select,
+button
+	outline none
+
+*, *:before, *:after
+	box-sizing border-box
+
+.body
+	width: 100%
+	padding: 32px 0
+	background-image: url('../img/general/bg.jpg')
+	background-attachment: fixed
+
+.wrapper
+	display flex
+	flex-direction column
+	min-height calc(100vh - 64px)
+	width: 850px
+	margin: 0 auto
+	background-color: $white
+	box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.75)
+
+.h1
+	display: flex
+	align-items: center
+	padding: 0 40px
+	margin-bottom: 10px
+
+	&::after, &::before
+		content: ''
+		display: block
+		height: 2px
+		background-color: $gray2
+		flex-grow: 1
+
+h1
+	padding: 0 12px
+
+	font-size: 16px
+	line-height: 24px
+	text-transform: uppercase
+	color: $gray2
+
+main
+	flex 1 0 auto
+
+p
+	font-size: 14px
+	line-height: 24px
+	color: $gray2
+
+//Модули
+@import "modules/modules.styl"
+
+// СТРАНИЦЫ
+
+@import 'pages/index.styl'
+@import 'pages/services.styl'

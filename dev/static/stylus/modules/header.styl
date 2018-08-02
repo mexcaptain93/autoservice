@@ -1,0 +1,126 @@
+.header
+
+  &__top
+    display: flex
+    justify-content: space-between
+    margin-bottom: 4px
+
+    & > *
+      width: 33%
+
+  .social
+
+    &__list
+      display: flex
+      padding-top: 10px
+      padding-left: 17px
+
+    &__item
+      margin-right: 10px
+
+      &:last-child
+        margin-right: 0
+
+  &__contacts
+    padding-top: 6px
+    padding-right: 7px
+
+    text-align: right
+
+  .contacts
+
+    &__time-phone
+      display: inline-block
+      position: relative
+      padding 6px 5px 11px 20px
+      margin-bottom: 3px
+      background-color: $gray
+      border-right: 7px solid $blue
+
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        width: 0
+        height: 0
+        border: 0 solid transparent
+        border-right-width: 19px
+        border-left-width: 0
+        border-bottom: 67px solid $white
+
+      &::after
+        content: ''
+        position: absolute
+        height: 70px
+        width: 1px
+        background: $white
+        left: 17px
+        top: -3px
+        transform: rotate(-16deg)
+        opacity: .3
+
+
+    &__time
+      margin-bottom: 10px
+
+      font-size: 14px
+      line-height: 20px
+      color: $white
+
+    &__phone
+      font-size: 17px
+      line-height: 20px
+      color: $white
+
+      a
+        &::before
+          content: ''
+          display: inline-block
+          width: 17px
+          height: 15px
+          background-image: url('../img/general/icon-phone.png')
+          background-repeat: no-repeat
+          background-size: 100%
+          position: relative
+          top: 1px
+          left: -9px
+
+     &__address
+       padding-right: 7px
+
+  &__logo
+    padding-top: 31px
+    text-align: center
+
+  .menu
+
+    &__list
+      display: flex
+      justify-content: space-between
+      width: 600px
+      margin: 0 auto 6px
+
+    &__item
+      color: $black
+      font-size: 16px
+      line-height: 28px
+      text-transform: uppercase
+      letter-spacing: 0
+
+      &_active
+        color $blue
+        position: relative
+
+        &::after
+          content: ''
+          position: absolute
+          bottom: 0
+          left: 50%
+          transform: translateX(-50%)
+          width: 0;
+          height: 0;
+          border: 0 solid transparent;
+          border-left-width: 3.5px;
+          border-right-width: 3.5px;
+          border-top: 4px solid $blue;
