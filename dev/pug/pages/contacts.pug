@@ -1,0 +1,23 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Контакты'
+    - var pageClass = 'contacts'
+
+
+block content
+    .contacts__heading.h1
+        h1 Контакты
+    .contacts__list
+        .contacts__item
+            .contacts__title Адрес:
+            .contacts__value м. Невский проспект, ул. Гаражная, бокс 777
+        .contacts__item
+            .contacts__title Телефон:
+            .contacts__value
+                a(href='tel:+78005553535') 8 800 555 35 35
+        .contacts__item
+            .contacts__title Часы работы:
+            .contacts__value с 08:00 до 19:00
+    .contacts__map.js-index-map
+
